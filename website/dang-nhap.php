@@ -36,8 +36,25 @@ if (isset($_POST["btn_submit"])) {
 	    	}
 
                 // Thực thi hành động sau khi lưu thông tin vào session
-                // ở đây mình tiến hành chuyển hướng trang web tới một trang gọi là index.php
+                //  tiến hành chuyển hướng trang web tới một trang
 			header('Location: trangchu.php');
+		}
+		if ($num_rows==0) {
+			echo "tên đăng nhập hoặc mật khẩu không đúng !";
+		}else{
+			// Lấy ra thông tin người dùng và lưu vào session
+			while ( $data = mysqli_fetch_array($query) ) {
+	    		$_SESSION["user_id"] = $data["id"];
+				$_SESSION['username'] = $data["username"];
+				$_SESSION["email"] = $data["email"];
+				$_SESSION["fullname"] = $data["fullname"];
+				$_SESSION["is_block"] = $data["is_block"];
+				$_SESSION["permision"] = $data["2"];
+	    	}
+
+                // Thực thi hành động sau khi lưu thông tin vào session
+                // ở đây mình tiến hành chuyển hướng trang web tới một trang gọi là index.php
+			header('Location: ./admin/quan-ly-thanh-vien.php');
 		}
 	}
 }
@@ -613,9 +630,9 @@ if (isset($_POST["btn_submit"])) {
 <meta name="format-detection" content="telephone=no">
 <meta name="msapplication-tap-highlight" content="no">
 
-<title>Fedu.vn</title>
+<title>VHW</title>
 
-<link href="http://khoahoc.fedu.vn/assets/css/custom/page.css" rel="stylesheet" type="text/css">
+<link href="" rel="stylesheet" type="text/css">
 
 <style>
 		input.input-lg {
@@ -694,7 +711,7 @@ if (isset($_POST["btn_submit"])) {
 								<span class="icon-bar"></span>
 						</button>
 						<div class="navbar-brand">
-																<a href="http://khoahoc.fedu.vn/"><img class="img-responsive" src="https://storage.googleapis.com/hachium/users/b7c9e200416d4e81dbd3f36733159276/1530194767960.png" alt="logo">
+																<a href="trangchu.php"><img src="style/IMG/2.png" alt="logo" >
 								</a>
 														</div>
 				</div><!--/ Logo end -->
@@ -703,36 +720,19 @@ if (isset($_POST["btn_submit"])) {
 																												<!--ALL LINK CAN BE VISIBLE WHEN LOGGING IN AND LOGGING OUT-->
 																																<!--ONLY LOGGED IN CAN BE VISIBLE -->
 																																<!--                            Check kiểm tra bản dào tạo nội bộ thì không cho in ra trang đăng ký-->
-																														<li nav="http://fedu.vn">
+																														<li nav="trangchu.php">
 																		<a class="page-scroll
 																"
-																																										href="http://fedu.vn"
+																																										href="trangchu.php"
 																																																											 tabindex="-1" id="btn-sign-up">Trang chủ</a>
 																</li>
-																																																																<!--ALL LINK CAN BE VISIBLE WHEN LOGGING IN AND LOGGING OUT-->
-																																<!--ONLY LOGGED IN CAN BE VISIBLE -->
-																																														<li nav="courses">
-																<a class="page-scroll" href="http://khoahoc.fedu.vn/courses"
-																								 tabindex="-1">Khoá học</a>
-														</li>
-																																																		<!--ALL LINK CAN BE VISIBLE WHEN LOGGING IN AND LOGGING OUT-->
-																																<!--ONLY LOGGED IN CAN BE VISIBLE -->
-																																<!--                            Check kiểm tra bản dào tạo nội bộ thì không cho in ra trang đăng ký-->
-																														<li nav="kich-hoat-khoa-hoc">
-																		<a class="page-scroll
-																"
-																																										href="http://khoahoc.fedu.vn/kich-hoat-khoa-hoc"
-																																																											 tabindex="-1" id="btn-sign-up">Kích hoạt khóa học</a>
-																</li>
-																																																																<!--ALL LINK CAN BE VISIBLE WHEN LOGGING IN AND LOGGING OUT-->
-																																																						<!--                            Check kiểm tra bản dào tạo nội bộ thì không cho in ra trang đăng ký-->
 																														<li nav="login">
-																		<a class="page-scroll
-																"
-																																										href="http://khoahoc.fedu.vn/login"
-																																																											 tabindex="-1" id="btn-sign-up">Đăng nhập</a>
+																		<a class="page-scrol" href="dang-nhap.php" tabindex="-1" id="btn-sign-up">Đăng nhập</a>
 																</li>
-																																																										</ul>
+																<li nav="login">
+				<a class="page-scrol" href="dang-ky.php" tabindex="-1" id="btn-sign-up">Đăng ký</a>
+		</li>
+															</ul>
 				</nav><!--/ Navigation end -->
 		</div><!--/ Row end -->
 </div>
@@ -764,15 +764,6 @@ if (isset($_POST["btn_submit"])) {
 														</div>
 												</form>
 										</div>
-										<div>
-												<p>
-														<a class="btn-forgot-pw" href="http://khoahoc.fedu.vn/forgot-password">Quên mật khẩu?</a>
-												</p>
-												<p>
-
-																														Nếu bạn chưa đăng ký?                                 <a href="http://khoahoc.fedu.vn/sign-up" class="btn-sign-up"> Đăng ký</a>
-																										</p>
-										</div>
 								</div>
 						</div>
 				</div>
@@ -784,30 +775,20 @@ if (isset($_POST["btn_submit"])) {
 						<div class="col-md-12 text-center" style="color: #f6f6f6; letter-spacing: 0.3px; line-height: 30px;">
 								<div class="school-name">
 										<div style="font-size: 26px;">
-												Fedu.vn                    </div>
-																						<div style="font-size: 13px; margin-top: -3px;">Trường Đào Tạo Tin Học, Lập Trình & Mỹ Thuật Đa Phương Tiện Fedu</div>
+								                  </div>
+																	<h2 class="title hachium">VHW.VN</h2>
+																						<div style="font-size: 13px; margin-top: -3px;">Trường Đào Tạo Tin Học, Lập Trình</div>
 																		</div>
-																		<div class="info-add">Địa chỉ: <span>22 Thành Công - Ba Đình - Hà Nội</span></div>
+																		<div class="info-add">Địa chỉ: <span>22 Nguyễn Văn Trỗi</span></div>
 																										<div class="info-add">Điện thoại: <span>0869259562</span></div>
-																										
 
 
-								<ul class="info-add social-icon dark unstyled">
-										<li>
-																								<a target="_blank" title="Facebook" href="https://www.facebook.com/fedu.vn/"> <span
-																class="icon-pentagon wow bounceIn"><i class="fa fa-facebook"></i></span>
-												</a>
-																																				<a title="Skype" href="skype:vietnd0410?chat"> <span
-																class="icon-pentagon wow bounceIn"><i class="fa fa-skype"></i></span>
-												</a>
-																						</li>
-								</ul>
 
-								<!--SHOW FOOTER LINK -->
+
 																				<div class="wrap-footer-custom-link text-center">
 
 																																																																																																				<a class="footer-link"
-																																						href="http://khoahoc.fedu.vn/p/terms"
+																																						href="./includes/DKSD.php"
 																																																				>Điều khoản sử dụng                                </a>
 																<span class="space-dot">&nbsp;&bull;&nbsp;</span>
 																																																																																																																		<a class="footer-link"
@@ -815,23 +796,7 @@ if (isset($_POST["btn_submit"])) {
 																																																								target="_blank"
 																																		>Chat trực tiếp với giáo viên                                </a>
 																<span class="space-dot">&nbsp;&bull;&nbsp;</span>
-																																																																																																																		<a class="footer-link"
-																																						href="https://www.facebook.com/groups/1283666168335006/?ref=bookmarks"
-																																																								target="_blank"
-																																		>Facebook group hỗ trợ khóa lập trình web backend và frontend                                </a>
-																<span class="space-dot">&nbsp;&bull;&nbsp;</span>
-																																																																																																																		<a class="footer-link"
-																																						href="http://khoahoc.fedu.vn/p/privacy"
-																																																				>Chính sách riêng tư                                </a>
-																<span class="space-dot">&nbsp;&bull;&nbsp;</span>
-																																																																																																																		<a class="footer-link"
-																																						href="https://www.facebook.com/groups/107584456406418"
-																																																								target="_blank"
-																																		>Facebook group hỗ trợ khóa thiết kế                                </a>
-																<span class="space-dot">&nbsp;&bull;&nbsp;</span>
-																																				</div>
-																														</div>
-				</div><!--/ Row end -->
+
 		</div><!--/ Container end -->
 </footer><!--/ Footer end -->
 

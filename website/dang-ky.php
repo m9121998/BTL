@@ -144,7 +144,7 @@
 								</button>
 
 								<div class="navbar-brand hachium">
-										<a href="http://khoahoc.fedu.vn/"><img class="img-responsive" src="https://storage.googleapis.com/hachium/users/b7c9e200416d4e81dbd3f36733159276/1530194767960.png" alt="logo" id="logo-navbar">
+										<a href="trangchu.php"><img  src="style/IMG/2.png" alt="logo" id="logo-navbar">
 										</a>
 								</div>
 
@@ -152,13 +152,11 @@
 						<nav class="collapse navbar-collapse clearfix" role="navigation">
 								<ul class="nav navbar-nav navbar-right">
 
-																<li><a href="http://fedu.vn" >Trang chủ</a></li>
+																<li><a href="trangchu.php" >Trang chủ</a></li>
 
-																<li><a href="http://khoahoc.fedu.vn/courses" >Khoá học</a></li>
+																<li><a href="dang-nhap.php" >Đăng nhập</a></li>
 
-																<li><a href="http://khoahoc.fedu.vn/kich-hoat-khoa-hoc" >Kích hoạt khóa học</a></li>
-
-																<li><a class="" href="http://khoahoc.fedu.vn/login" >Đăng nhập</a></li>
+																<li><a class="" href="dang-ky.php" >Đăng ký</a></li>
 
 								</ul>
 						</nav>
@@ -259,35 +257,17 @@
 </section>
 <section id="footer" style="background:#292c2f; color:white;" data-section-id="footer">
 		<div class="container">
-				<h2 class="title hachium">Fedu.vn</h2>
-				<p class="description hachium">Trường Đào Tạo Tin Học, Lập Trình & Mỹ Thuật Đa Phương Tiện Fedu</p>
+				<h2 class="title hachium">VHW.VN</h2>
+				<p class="description hachium">Đào Tạo Tin Học, Lập Trình</p>
 
-						<p class="address hachium">Địa chỉ: 22 Thành Công - Ba Đình - Hà Nội</p>
-
-
-						<p class="phone hachium">Số điện thoại: 0869259562</p>
-
-						<div class="custom-icon social-icon dark hachium">
-
-								<a href="https://www.facebook.com/fedu.vn/">
-														<span class="icon-pentagon wow bounceIn animated" style="visibility: visible;">
-																<i class='fa fa-facebook'></i>
-														</span>
-								</a>
+						<p class="address hachium">Địa chỉ: 22 Nguyễn Văn Trỗi</p>
 
 
-								<a href="vietnd0410">
-														<span class="icon-pentagon wow bounceIn animated" style="visibility: visible;">
-																<i class='fa fa-skype'></i>
-														</span>
-								</a>
-
-						</div>
-
+						<p class="phone hachium">Số điện thoại: 0979377285</p>
 				<div class="custom-page text-center">
 
 						<span class="wrap-footer-link hachium"">
-								<a class="footer-link hachium" href="http://khoahoc.fedu.vn/p/terms" style="color:white">Điều khoản sử dụng</a>
+								<a class="footer-link hachium" href="includes/DKSD.php" style="color:white">Điều khoản sử dụng</a>
 
 									 &nbsp; • &nbsp;
 
@@ -300,7 +280,7 @@
 
 						</span>
 
-					
+</section>
 <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="http://khoahoc.fedu.vn/assets/js/owl.carousel.min.js"></script>
 
 <script src="http://khoahoc.fedu.vn/assets/js/wow.min.js"></script>

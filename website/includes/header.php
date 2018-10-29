@@ -128,22 +128,17 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 			<div class="container clearfix et_menu_container">
 							<div class="logo_container">
 					<span class="logo_helper"></span>
-					<a href="../trangchu.php">
-						<img src=https://vuihocweb.com/wp-content/uploads/2016/12/DC-LOGO-CUSTOM-WHITE.png id="logo" data-height-percentage="54" />
+					<a href="./trangchu.php">
+						<img src=./style/IMG/2.png id="logo" data-height-percentage="54" />
 					</a>
 				</div>
 				<div id="et-top-navigation" data-height="66" data-fixed-height="40">
 											<nav id="top-menu-nav">
-						<ul id="top-menu" class="nav"><li id="menu-item-76" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-2 current_page_item menu-item-76"><a href="http://fedu.vn/">Trang chủ</a></li>
-<li id="menu-item-1249" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1249"><a href="http://fedu.vn/khoa-hoc/">Khóa học</a>
-<ul class="sub-menu">
-	<li id="menu-item-1250" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-1250"><a href="http://fedu.vn/khoa-hoc/lap-trinh-thiet-ke-web/">Lập trình &#8211; Thiết kế web</a></li>
-	<li id="menu-item-10534" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-10534"><a href="http://fedu.vn/khoa-hoc/combo-khoa-hoc-lap-trinh-web/">Combo Khóa Học Lập Trình Web</a></li>
-	<li id="menu-item-1252" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-1252"><a href="##">Python</a></li>
-</ul>
+						<ul id="top-menu" class="nav"><li id="menu-item-76" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-2 current_page_item menu-item-76"><a href="trangchu.php">Trang chủ</a></li>
+<li ><a href="./Khoa-hoc.php">Khóa học</a>
+
 </li>
-<li id="menu-item-1853" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1853"><a href="http://khoahoc.fedu.vn/kich-hoat-khoa-hoc">Kích hoạt khóa học</a></li>
-<li id="menu-item-231" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-231"><a href="dang-nhap.php">Đăng nhập lớp học</a></li>
+<li id="menu-item-231" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-231"><a href="./dang-nhap.php">Đăng nhập lớp học</a></li>
 </ul>						</nav>
 
 

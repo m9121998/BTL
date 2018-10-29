@@ -623,7 +623,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 				<div class="et_pb_text_inner">
 
-<h1 style="text-align: center;">LỢI ÍCH KHI HỌC TẬP TẠI FEDU</h1>
+<h1 style="text-align: center;">LỢI ÍCH KHI HỌC TẬP TẠI VHW</h1>
 
 				</div>
 			</div> <!-- .et_pb_text -->
@@ -904,12 +904,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 			<article id="post-113" class="et_pb_post clearfix post-113 post type-post status-publish format-standard has-post-thumbnail hentry category-tuyen-dung">
 
-			<div class="et_pb_image_container">							<a href="http://fedu.vn/tuyen-dung/tap-doan-fpt-tuyen-thiet-ke-do-hoa/" class="entry-featured-image-url">
-								<img src="http://fedu.vn/wp-content/uploads/2017/07/tải-xuống.png" alt='Kỹ Sư Front-end chú ý! Mức lương 800-1100 USD' width='400' height='250' />															</a>
-					</div> <!-- .et_pb_image_container -->
-												<h2 class="entry-title"><a href="http://fedu.vn/tuyen-dung/tap-doan-fpt-tuyen-thiet-ke-do-hoa/">Kỹ Sư Front-end chú ý! Mức lương 800-1100 USD</a></h2>
 
-				<p class="post-meta">  <span class="published">11/07/2017</span>    </p><div class="post-content"><p>To develop and manage the "XEHOINFO" WEB site, the engineer should - improve its system and add new functions - do Front-end and UI/UX development - test for trouble shooting Job descriptions To develop and manage the "XEHOINFO" WEB site, the engineer should - improve...</p>
+    </p><div class="post-content"><p>To develop and manage the "XEHOINFO" WEB site, the engineer should - improve its system and add new functions - do Front-end and UI/UX development - test for trouble shooting Job descriptions To develop and manage the "XEHOINFO" WEB site, the engineer should - improve...</p>
 </div>
 			</article> <!-- .et_pb_post -->
 
