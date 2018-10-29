@@ -3,7 +3,6 @@
  ?>
 <?php require_once("includes/connection.php");?>
 <?php include("includes/permission.php");?>
-<?php include ("includes/header.php"); ?>
 <?php
 	if (isset($_POST["btn_submit"])) {
 		//lấy thông tin từ các form bằng phương thức POST
@@ -64,8 +63,8 @@
 				$is_block = "checked='checked'";
 			}
 	?>
-	<form action="chinh-sua-thanh-vien.php" method="post">
-		<table>
+	<form action="chinh-sua-thanh-vien.php" method="post" >
+		<table align="center" border="1px">
 			<tr>
 				<td colspan="2">
 					<h3>Chỉnh sửa thông tin thành viên</h3>
@@ -98,4 +97,3 @@
 
 	</form>
 	<?php } ?>
-<?php include "includes/footer.php" ?>

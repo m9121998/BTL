@@ -1,9 +1,10 @@
 <?php
 	session_start();
  ?>
-<?php require_once("includes/connection.php");?>
-<?php include("includes/permission.php");?>
-<?php include ("includes/header.php"); ?>
+ 
+  <?php include "includes/headeradmin.php" ?>
+ <?php require_once("includes/connection.php");?>
+ <?php include("includes/permission.php");?>
 <?php
 	if (isset($_POST["btn_submit"])) {
 		//lấy thông tin từ các form bằng phương thức POST
@@ -35,8 +36,9 @@
 	}
 ?>
 
-	<form action="them-thanh-vien.php" method="post">
-		<table>
+<body>
+	<form action="them-thanh-vien.php" method="post" align="center">
+		<table align="center" border="1px" style="color:blue;">
 			<tr>
 				<td colspan="2">
 					<h3>Thêm thành viên</h3>
@@ -75,8 +77,9 @@
 			<tr>
 				<td colspan="2" align="center"><input type="submit" name="btn_submit" value="Thêm thành viên"></td>
 			</tr>
-
+			<tr>
+				<td colspan="2" align="center"><a href="quan-ly-thanh-vien.php">Quay về trang quản lý</td>
+			</tr>
 		</table>
-
 	</form>
-<?php include "includes/footer.php" ?>
+	</body>

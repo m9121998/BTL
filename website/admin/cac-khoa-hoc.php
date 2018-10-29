@@ -1,4 +1,3 @@
-
 <?php
 	session_start();
  ?>
@@ -8,12 +7,12 @@
 <?php include("includes/permission.php");?>
 
 <?php
-	$sql = "SELECT * FROM users";
+	$sql = "SELECT * FROM posts";
 	$query = mysqli_query($conn,$sql);
 ?>
 <?php
 	if (isset($_GET["id_delete"])) {
-		$sql = "DELETE FROM users WHERE id = ".$_GET["id_delete"];
+		$sql = "DELETE FROM posts WHERE id = ".$_GET["id_delete"];
 		mysqli_query($conn,$sql);
 	}
 
@@ -22,10 +21,9 @@
 	<thead>
 		<tr>
 			<td bgcolor="#E6E6FA">ID</td>
-			<td bgcolor="#E6E6FA">Username</td>
-			<td bgcolor="#E6E6FA">Email</td>
-			<td bgcolor="#E6E6FA">Khóa tài khoản</td>
-			<td bgcolor="#E6E6FA">Quyền</td>
+			<td bgcolor="#E6E6FA">tiêu đề</td>
+			<td bgcolor="#E6E6FA">giới thiệu</td>
+			<td bgcolor="#E6E6FA">tài nguyên</td>
 			<td bgcolor="#E6E6FA">Hành động</td>
 		<tr>
 	</thead>
@@ -37,13 +35,14 @@
 	?>
 		<tr>
 			<td><?php echo $i; ?></td>
-			<td><?php echo $data['username']; ?></td>
-			<td><?php echo $data['email']; ?></td>
-			<td><?php echo ($data['is_block'] == 1) ? "Bị khóa" : "Không bị khóa"; ?></td>
-			<td><?php echo ($data['permision'] == 0) ? "Thành viên thường" : "Admin"; ?></td>
+			<td><?php echo $data['title']; ?></td>
+			<td><?php echo $data['content']; ?></td>
 			<td>
-				<a href="chinh-sua-thanh-vien.php?id=<?php echo $id;?>">Sửa</a>
-				<a href="quan-ly-thanh-vien.php?id_delete=<?php echo $id;?>">Xóa</a>
+					<a href="<?php echo $data['tai_nguyen'];?>"><?php echo $data['tai_nguyen'];?>"</a>
+			</td>
+			<td>
+				<a href="them-thanh-vien-vao-khoa-hoc.php?id=<?php echo $id;?>">Thêm học viên</a>
+				<a href="cac-khoa-hoc.php?id_delete=<?php echo $id;?>">Xóa</a>
 			</td>
 		</tr>
 	<?php
